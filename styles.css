@@ -655,9 +655,8 @@ footer {
 }
 
 .footer-logo {
-    height: 40px;
+    height: 80px;
     margin-bottom: 16px;
-    filter: brightness(0) invert(1);
 }
 
 .footer-col p {
@@ -981,6 +980,39 @@ footer {
 .product-featured-image img {
     width: 100%;
     border-radius: 16px;
+}
+
+/* Combo Gallery Thumbnails */
+.combo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.combo-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.combo-gallery img:hover {
+    border-color: var(--green-primary);
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.main-combo-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.main-combo-image:hover {
+    transform: scale(1.01);
 }
 
 .badge-hot {
