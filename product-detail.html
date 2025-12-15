@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm | Cocoon Việt Nam</title>
+    <meta name="description" content="Xem chi tiết sản phẩm Cocoon - Mỹ phẩm thuần chay chăm sóc da.">
+    <link rel="icon" type="image/png" href="Website -20251214T084453Z-3-001/Website/Logo Cocoon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span>🌿 Miễn phí vận chuyển cho đơn hàng từ 300.000đ</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="mainHeader">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo-link">
+                    <img src="Website -20251214T084453Z-3-001/Website/Logo Cocoon.png" alt="Cocoon Vietnam"
+                        class="logo">
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="products.html" class="active">Sản phẩm</a></li>
+                    <li><a href="blog.html">Bài viết</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="products.html" class="btn-primary">Mua ngay</a>
+                </div>
+                <button class="mobile-menu" id="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <section class="breadcrumb-section">
+            <div class="container">
+                <a href="index.html">Trang chủ</a> /
+                <a href="products.html">Sản phẩm</a> /
+                <span id="breadcrumbName">Chi tiết sản phẩm</span>
+            </div>
+        </section>
+
+        <!-- Product Detail -->
+        <section class="section product-detail-section">
+            <div class="container">
+                <div class="product-detail">
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img id="mainProductImage" src="Website -20251214T084453Z-3-001/Website/DUY09322.jpg"
+                                alt="Sản phẩm Cocoon">
+                        </div>
+                        <div class="thumbnail-list" id="thumbnailList">
+                            <img src="Website -20251214T084453Z-3-001/Website/DUY09322.jpg" alt="Thumbnail 1"
+                                class="active" onclick="changeImage(this)">
+                            <img src="Website -20251214T084453Z-3-001/Website/DUY09333.jpg" alt="Thumbnail 2"
+                                onclick="changeImage(this)">
+                            <img src="Website -20251214T084453Z-3-001/Website/DUY09374.jpg" alt="Thumbnail 3"
+                                onclick="changeImage(this)">
+                        </div>
+                    </div>
+                    <div class="product-info-detail">
+                        <span class="product-badge-tag">Bestseller</span>
+                        <h1 id="productName">Combo Bí Đao Da Dầu Mụn</h1>
+                        <div class="product-rating-detail">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(256 đánh giá)</span>
+                            <span class="sold-count">| Đã bán 1.2K+</span>
+                        </div>
+                        <div class="product-price-detail">
+                            <span class="price-current" id="priceDisplay">993.000₫</span>
+                            <span class="price-old">1.020.000₫</span>
+                            <span class="discount-tag">-3%</span>
+                        </div>
+                        <p class="product-short-desc" id="productDesc">
+                            Bộ sản phẩm chăm sóc da dầu mụn hoàn chỉnh gồm: Nước tẩy trang 290k, Gel rửa mặt 290k,
+                            Tinh chất N7 290k và Dung dịch chấm mụn 123k.
+                            Phù hợp cho da dầu, da hỗn hợp thiên dầu, da mụn.
+                        </p>
+
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">🌱</span>
+                                <span>100% Thuần Chay</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🐰</span>
+                                <span>Cruelty-Free</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🇻🇳</span>
+                                <span>Made in Vietnam</span>
+                            </div>
+                        </div>
+
+                        <div class="quantity-selector">
+                            <label>Số lượng:</label>
+                            <div class="quantity-input">
+                                <button onclick="changeQuantity(-1)">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="99">
+                                <button onclick="changeQuantity(1)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="btn-primary btn-lg btn-full">
+                                <span>🛒</span> Thêm vào giỏ hàng
+                            </button>
+                            <button class="btn-secondary btn-lg btn-full">
+                                Mua ngay
+                            </button>
+                        </div>
+
+                        <div class="product-policies">
+                            <div class="policy-item">
+                                <span>🚚</span>
+                                <span>Miễn phí vận chuyển đơn từ 300K</span>
+                            </div>
+                            <div class="policy-item">
+                                <span>🔄</span>
+                                <span>Đổi trả trong 7 ngày</span>
+                            </div>
+                            <div class="policy-item">
+                                <span>✓</span>
+                                <span>Sản phẩm chính hãng 100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Tabs -->
+        <section class="section section-cream">
+            <div class="container">
+                <div class="product-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="showTab('description')">Mô tả</button>
+                        <button class="tab-btn" onclick="showTab('ingredients')">Thành phần</button>
+                        <button class="tab-btn" onclick="showTab('usage')">Hướng dẫn sử dụng</button>
+                        <button class="tab-btn" onclick="showTab('reviews')">Đánh giá</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="description" class="tab-pane active">
+                            <h3>Mô tả sản phẩm</h3>
+                            <p>Combo Bí Đao Da Dầu Mụn Cơ Bản là bộ sản phẩm chăm sóc da dầu mụn hoàn chỉnh, được thiết
+                                kế đặc
+                                biệt cho làn da dầu, da hỗn hợp thiên dầu và da mụn.</p>
+                            <p><strong>Bộ sản phẩm bao gồm:</strong></p>
+                            <ul>
+                                <li><strong>Sữa rửa mặt Bí Đao 140ml:</strong> Làm sạch sâu, loại bỏ bụi bẩn và bã
+                                    nhờ mà không làm khô da</li>
+                                <li><strong>Nước Bí Đao Cân Bằng Da 140ml:</strong> Cân bằng độ pH, se khít lỗ chân
+                                    lông, chuẩn
+                                    bị da cho các bước tiếp theo</li>
+                                <li><strong>Tinh Chất Bí Đao 70ml:</strong> Cung cấp dưỡng chất sâu, làm dịu da kích ứng
+                                </li>
+                                <li><strong>Thạch Bí Đao Dưỡng Ẩm 30ml:</strong> Khóa ẩm, bảo vệ da suốt ngày dài</li>
+                            </ul>
+                            <p><strong>Công dụng chính:</strong></p>
+                            <ul>
+                                <li>Kiểm soát dầu nhờn hiệu quả</li>
+                                <li>Giảm mụn và ngăn ngừa mụn mới</li>
+                                <li>Se khít lỗ chân lông</li>
+                                <li>Dưỡng ẩm mà không gây bết rít</li>
+                                <li>Làm dịu da, giảm kích ứng</li>
+                            </ul>
+                        </div>
+                        <div id="ingredients" class="tab-pane">
+                            <h3>Thành phần chính</h3>
+                            <ul>
+                                <li><strong>Chiết xuất Bí Đao (Winter Melon Extract):</strong> Giàu vitamin C và E, giúp
+                                    kiểm soát dầu, se khít lỗ chân lông và làm sáng da</li>
+                                <li><strong>Niacinamide:</strong> Cải thiện kết cấu da, giảm thâm mụn, kiểm soát bã nhờn
+                                </li>
+                                <li><strong>Hyaluronic Acid:</strong> Cấp ẩm sâu, giữ nước cho da</li>
+                                <li><strong>Tea Tree Oil:</strong> Kháng khuẩn, giảm viêm, ngăn ngừa mụn</li>
+                                <li><strong>Centella Asiatica:</strong> Làm dịu da, phục hồi da tổn thương</li>
+                            </ul>
+                            <p><em>* Tất cả thành phần đều có nguồn gốc thực vật, không có nguồn gốc từ động vật.</em>
+                            </p>
+                        </div>
+                        <div id="usage" class="tab-pane">
+                            <h3>Hướng dẫn sử dụng</h3>
+                            <p><strong>Quy trình 4 bước:</strong></p>
+                            <ol>
+                                <li><strong>Bước 1 - Làm sạch:</strong> Lấy lượng gel vừa đủ, tạo bọt với nước, massage
+                                    nhẹ nhàng lên mặt ẩm trong 60 giây, rửa sạch</li>
+                                <li><strong>Bước 2 - Toner:</strong> Đổ toner ra bông tẩy trang, lau nhẹ nhàng lên toàn
+                                    bộ mặt và cổ</li>
+                                <li><strong>Bước 3 - Serum:</strong> Lấy 2-3 giọt serum, thoa đều và vỗ nhẹ cho thẩm
+                                    thấu</li>
+                                <li><strong>Bước 4 - Kem dưỡng:</strong> Lấy lượng kem vừa đủ, thoa đều lên mặt để khóa
+                                    ẩm</li>
+                            </ol>
+                            <p><strong>Lưu ý:</strong></p>
+                            <ul>
+                                <li>Sử dụng 2 lần/ngày vào buổi sáng và tối</li>
+                                <li>Sử dụng thêm kem chống nắng vào ban ngày</li>
+                                <li>Bảo quản nơi khô ráo, thoáng mát</li>
+                            </ul>
+                        </div>
+                        <div id="reviews" class="tab-pane">
+                            <h3>Đánh giá từ khách hàng</h3>
+                            <div class="review-summary">
+                                <div class="rating-big">
+                                    <span class="number">4.9</span>
+                                    <div class="stars">★★★★★</div>
+                                    <span class="count">256 đánh giá</span>
+                                </div>
+                            </div>
+                            <div class="review-list">
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <span class="avatar">TN</span>
+                                        <div class="review-meta">
+                                            <strong>Thanh Ngân</strong>
+                                            <div class="stars">★★★★★</div>
+                                        </div>
+                                        <span class="review-date">20/11/2024</span>
+                                    </div>
+                                    <p>Mình dùng combo bí đao được 2 tuần, da đỡ dầu hẳn và mụn cũng giảm rõ rệt. Rất
+                                        hài lòng với sản phẩm!</p>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <span class="avatar">ML</span>
+                                        <div class="review-meta">
+                                            <strong>Minh Lan</strong>
+                                            <div class="stars">★★★★★</div>
+                                        </div>
+                                        <span class="review-date">15/11/2024</span>
+                                    </div>
+                                    <p>Sản phẩm thuần chay, an toàn cho da nhạy cảm của mình. Đã dùng hết 3 combo rồi,
+                                        sẽ tiếp tục ủng hộ!</p>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-header">
+                                        <span class="avatar">HM</span>
+                                        <div class="review-meta">
+                                            <strong>Hoàng Mai</strong>
+                                            <div class="stars">★★★★★</div>
+                                        </div>
+                                        <span class="review-date">10/11/2024</span>
+                                    </div>
+                                    <p>Packaging đẹp, mùi thơm dịu nhẹ. Đặc biệt thích gel rửa mặt, làm sạch sâu mà
+                                        không khô da chút nào.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sản phẩm liên quan</h2>
+                    <p>Có thể bạn quan tâm</p>
+                </div>
+                <div class="products-list products-4">
+                    <div class="product-item">
+                        <div class="product-item-image">
+                            <img src="Website -20251214T084453Z-3-001/Website/DUY09374.jpg" alt="Nước tẩy trang bí đao">
+                            <div class="product-overlay">
+                                <a href="product-detail.html?id=taytrang" class="btn-primary">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="product-item-info">
+                            <h3><a href="product-detail.html?id=taytrang">Nước Tẩy Trang Bí Đao</a></h3>
+                            <div class="product-price">
+                                <span class="price-current">290.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item-image">
+                            <img src="Website -20251214T084453Z-3-001/Website/DUY09381.jpg" alt="Gel rửa mặt bí đao">
+                            <div class="product-overlay">
+                                <a href="product-detail.html?id=gel" class="btn-primary">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="product-item-info">
+                            <h3><a href="product-detail.html?id=gel">Gel Rửa Mặt Bí Đao</a></h3>
+                            <div class="product-price">
+                                <span class="price-current">290.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item-image">
+                            <img src="Website -20251214T084453Z-3-001/Website/DUY09390.jpg" alt="Tinh chất bí đao N7">
+                            <div class="product-overlay">
+                                <a href="product-detail.html?id=serum" class="btn-primary">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="product-item-info">
+                            <h3><a href="product-detail.html?id=serum">Tinh Chất Bí Đao N7</a></h3>
+                            <div class="product-price">
+                                <span class="price-current">290.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item-image">
+                            <img src="Website -20251214T084453Z-3-001/Website/DUY09393.jpg"
+                                alt="Dung dịch chấm mụn bí đao">
+                            <div class="product-overlay">
+                                <a href="product-detail.html?id=chammun" class="btn-primary">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="product-item-info">
+                            <h3><a href="product-detail.html?id=chammun">Dung Dịch Chấm Mụn Bí Đao</a></h3>
+                            <div class="product-price">
+                                <span class="price-current">123.000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="Website -20251214T084453Z-3-001/Website/Logo Cocoon.png" alt="Cocoon Vietnam"
+                        class="footer-logo">
+                    <p>Thương hiệu mỹ phẩm thuần chay hàng đầu Việt Nam</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="currentColor"
+                                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <rect fill="none" stroke="currentColor" stroke-width="2" x="2" y="2" width="20"
+                                    height="20" rx="5" />
+                                <circle fill="none" stroke="currentColor" stroke-width="2" cx="12" cy="12" r="4" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="currentColor"
+                                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <p><strong>Email:</strong> we@cocoonvietnam.com</p>
+                    <p><strong>Hotline:</strong> 19009300</p>
+                    <p><strong>Địa chỉ:</strong> TP. Hồ Chí Minh</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Thông tin</h4>
+                    <ul>
+                        <li><a href="about.html">Về chúng tôi</a></li>
+                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="blog.html">Bài viết</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Chính sách</h4>
+                    <ul>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Cocoon Việt Nam. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product data
+        const products = {
+            combo: {
+                name: 'Combo Bí Đao Da Dầu Mụn',
+                price: '993.000₫',
+                oldPrice: '1.020.000₫',
+                discount: '-3%',
+                image: 'Website -20251214T084453Z-3-001/Website/DUY09322.jpg',
+                thumbnails: [
+                    'Website -20251214T084453Z-3-001/Website/DUY09322.jpg',
+                    'Website -20251214T084453Z-3-001/Website/DUY09374.jpg',
+                    'Website -20251214T084453Z-3-001/Website/DUY09381.jpg'
+                ],
+                description: 'Bộ sản phẩm chăm sóc da dầu mụn hoàn chỉnh gồm: Nước tẩy trang, Gel rửa mặt, Tinh chất N7 và Dung dịch chấm mụn. Phù hợp cho da dầu, da hỗn hợp thiên dầu, da mụn.',
+                badge: 'Bestseller',
+                category: 'Combo'
+            },
+            taytrang: {
+                name: 'Nước Tẩy Trang Bí Đao',
+                price: '290.000₫',
+                oldPrice: '',
+                discount: '',
+                image: 'Website -20251214T084453Z-3-001/Website/DUY09374.jpg',
+                thumbnails: [
+                    'Website -20251214T084453Z-3-001/Website/DUY09374.jpg'
+                ],
+                description: 'Nước tẩy trang bí đao giúp loại bỏ lớp trang điểm, kem chống nắng và bụi mịn tích tụ trong ngày. Công nghệ Micellar làm sạch nhẹ nhàng mà không cần chà xát mạnh, đồng thời công thức không cồn giảm nguy cơ kích ứng.',
+                badge: 'Hot',
+                category: 'Làm sạch',
+                ingredients: 'Chiết xuất Bí Đao, Rau Má, Tinh dầu Tràm Trà, Niacinamide, Micellar Water',
+                usage: 'Thấm nước tẩy trang lên bông tẩy trang. Lau nhẹ nhàng lên vùng mắt, môi và toàn bộ khuôn mặt cho đến khi sạch trang điểm. Không cần rửa lại với nước.'
+            },
+            gel: {
+                name: 'Gel Rửa Mặt Bí Đao',
+                price: '290.000₫',
+                oldPrice: '',
+                discount: '',
+                image: 'Website -20251214T084453Z-3-001/Website/DUY09381.jpg',
+                thumbnails: [
+                    'Website -20251214T084453Z-3-001/Website/DUY09381.jpg'
+                ],
+                description: 'Gel rửa mặt bí đao là bước làm sạch cơ bản, giúp loại bỏ dầu thừa và bụi bẩn mà không gây khô căng. Sản phẩm có độ pH cân bằng 5.5–6.5, không chứa xà phòng, kết hợp bí đao và rau má giúp làm dịu da.',
+                badge: 'Bestseller',
+                category: 'Làm sạch',
+                ingredients: 'Chiết xuất Bí Đao, Rau Má, Tinh dầu Tràm Trà, Niacinamide, Glycerin, độ pH 5.5-6.5',
+                usage: 'Làm ướt da mặt. Lấy một lượng gel vừa đủ ra tay, tạo bọt và massage nhẹ nhàng lên mặt trong 30-60 giây. Rửa sạch với nước. Sử dụng 2 lần/ngày sáng và tối.'
+            },
+            serum: {
+                name: 'Tinh Chất Bí Đao N7',
+                price: '290.000₫',
+                oldPrice: '',
+                discount: '',
+                image: 'Website -20251214T084453Z-3-001/Website/DUY09390.jpg',
+                thumbnails: [
+                    'Website -20251214T084453Z-3-001/Website/DUY09390.jpg'
+                ],
+                description: 'Tinh chất bí đao N7 là bước chăm sóc chuyên sâu, hỗ trợ kiểm soát dầu nhờn và cải thiện tình trạng mụn. Kết cấu lỏng nhẹ thấm nhanh, mang lại cảm giác thông thoáng. 7% Niacinamide kết hợp bí đao, rau má giúp làm dịu da.',
+                badge: 'Hot',
+                category: 'Điều trị',
+                ingredients: '7% Niacinamide, Chiết xuất Bí Đao, Rau Má, Tinh dầu Tràm Trà, Hyaluronic Acid, Zinc PCA',
+                usage: 'Sau khi làm sạch và cân bằng da, lấy 2-3 giọt tinh chất ra tay. Thoa đều lên mặt và cổ, massage nhẹ nhàng cho đến khi thấm hết. Sử dụng 2 lần/ngày.'
+            },
+            chammun: {
+                name: 'Dung Dịch Chấm Mụn Bí Đao',
+                price: '123.000₫',
+                oldPrice: '',
+                discount: '',
+                image: 'Website -20251214T084453Z-3-001/Website/DUY09393.jpg',
+                thumbnails: [
+                    'Website -20251214T084453Z-3-001/Website/DUY09393.jpg'
+                ],
+                description: 'Dung dịch chấm mụn bí đao giúp xử lý các nốt mụn viêm tại chỗ. Công thức với chiết xuất bí đao, rau má, tinh dầu tràm trà và 20% Azeclair giúp làm khô cồi mụn và giảm sưng đỏ, hạn chế vết thâm.',
+                badge: 'New',
+                category: 'Điều trị',
+                ingredients: '20% Azeclair (Azelaic Acid), Chiết xuất Bí Đao, Rau Má, Tinh dầu Tràm Trà, Salicylic Acid, Tea Tree Oil',
+                usage: 'Dùng que bông hoặc ngón tay sạch chấm một lượng nhỏ lên nốt mụn. Để khô tự nhiên. Sử dụng 2-3 lần/ngày hoặc khi cần thiết. Không bôi lên vùng da lành.'
+            }
+        };
+
+        // Function to get URL parameter
+        function getProductId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id') || 'combo';
+        }
+
+        // Function to load product data
+        function loadProduct() {
+            const productId = getProductId();
+            const product = products[productId] || products.combo;
+
+            // Update product name
+            document.getElementById('productName').textContent = product.name;
+
+            // Update main image
+            document.getElementById('mainProductImage').src = product.image;
+            document.getElementById('mainProductImage').alt = product.name;
+
+            // Update thumbnails
+            const thumbnailList = document.getElementById('thumbnailList');
+            thumbnailList.innerHTML = '';
+            product.thumbnails.forEach((thumb, index) => {
+                const img = document.createElement('img');
+                img.src = thumb;
+                img.alt = `Thumbnail ${index + 1}`;
+                img.className = index === 0 ? 'active' : '';
+                img.onclick = function () { changeImage(this); };
+                thumbnailList.appendChild(img);
+            });
+
+            // Update price
+            document.getElementById('priceDisplay').textContent = product.price;
+            const oldPriceEl = document.querySelector('.price-old');
+            const discountEl = document.querySelector('.discount-tag');
+            if (product.oldPrice) {
+                oldPriceEl.textContent = product.oldPrice;
+                oldPriceEl.style.display = '';
+            } else {
+                oldPriceEl.style.display = 'none';
+            }
+            if (product.discount) {
+                discountEl.textContent = product.discount;
+                discountEl.style.display = '';
+            } else {
+                discountEl.style.display = 'none';
+            }
+
+            // Update description
+            document.getElementById('productDesc').textContent = product.description;
+
+            // Update badge
+            document.querySelector('.product-badge-tag').textContent = product.badge;
+
+            // Update page title
+            document.title = product.name + ' | Cocoon Việt Nam';
+
+            // Update breadcrumb
+            document.querySelector('.breadcrumb').innerHTML = `<a href="index.html">Trang chủ</a> / <a href="products.html">Sản phẩm</a> / ${product.name}`;
+        }
+
+        // Product detail page scripts
+        function changeImage(thumbnail) {
+            const mainImage = document.getElementById('mainProductImage');
+            mainImage.src = thumbnail.src;
+            document.querySelectorAll('.thumbnail-list img').forEach(img => img.classList.remove('active'));
+            thumbnail.classList.add('active');
+        }
+
+        function changeQuantity(delta) {
+            const input = document.getElementById('quantity');
+            let value = parseInt(input.value) + delta;
+            if (value < 1) value = 1;
+            if (value > 99) value = 99;
+            input.value = value;
+        }
+
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Load product on page load
+        document.addEventListener('DOMContentLoaded', loadProduct);
+    </script>
+</body>
+
+</html>

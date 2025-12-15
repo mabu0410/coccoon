@@ -1,0 +1,5 @@
+# Large files
+*.mp4
+
+# Node modules
+node_modules/
